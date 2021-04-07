@@ -48,6 +48,17 @@
 
   <script id="insert"></script>
 
+<style>
+#gov { width: 50%;
+   height: 50%;}
+
+</style>
+
+
+
+
+
+
 </head>
 <body>
 
@@ -56,6 +67,10 @@
   <div class = "main">  
 
 <div id="chart-container">FusionCharts will render here</div>
+
+<div id="gov">
+    <img src="LA.png" alt="" />
+</div>
 
         <a class="image-link" href="Detailed/test.jpeg">Open popup</a>
 
@@ -452,6 +467,20 @@ FusionCharts.ready(function() {
 }
 </script>-->
  
+
+ <script type="text/javascript">
+(function() {
+
+var img = document.getElementById('image').firstChild;
+img.onload = function() {
+    if(img.height > img.width) {
+        img.height = '100%';
+        img.width = 'auto';
+    }
+};
+
+}());
+</script>
 
   <script>
     // tell the embed parent frame the height of the content
