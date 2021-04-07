@@ -48,7 +48,11 @@
 
   <script id="insert"></script>
 
+<style>
+#gov { width: 50%;
+   height: 50%;}
 
+</style>
 
 
 
@@ -64,7 +68,11 @@
 
 <div id="chart-container">FusionCharts will render here</div>
 
+<div id="gov">
+    <img src="LA.png" alt="" />
+</div>
 
+        <a class="image-link" href="Detailed/test.jpeg">Open popup</a>
 
 
 
@@ -131,7 +139,7 @@ FusionCharts.ready(function() {
 "entityFillHoverColor": "#4166B0",
 //"hoverOnNull":"1",
 
-"bgColor": "#000000",
+"bgColor": "#ffffff",
 
       'bgAlpha':"100",
         "numberPrefix": "$",
@@ -175,7 +183,7 @@ FusionCharts.ready(function() {
       }, {
         "id": "WA",
              "color": "#46b337",
-"link": "P-detailsWin,width=600,height=800,left=900px,top=200px,status=no,directories=no, location=no,menubar=no, resizable=no-WA.png",
+"link": "P-detailsWin,width=600,height=800,left=900px,top=200px,status=no,directories=no, location=no,menubar=no, resizable=no-statements/WA.png",
        
       }, {
         "id": "OR",
@@ -246,7 +254,7 @@ FusionCharts.ready(function() {
        // "value": "58911000",
              "color": "#7c857c",
 
-             // "link": "P-detailsWin,width=800,height=700,toolbar=yes,location=yes,left=900px,top=200px,status=yes, detailsWin=kema, resizable=no-https://en.wikipedia.org/wiki/Apple"
+              "link": "P-detailsWin,width=800,height=700,toolbar=yes,location=yes,left=900px,top=200px,status=yes, detailsWin=kema, resizable=no-https://en.wikipedia.org/wiki/Apple"
 
            
        
@@ -316,7 +324,7 @@ FusionCharts.ready(function() {
         "id": "TX",
         //"value": "97344000",
            "color": "#cf4040",
-           // "link": "P-detailsPopUp, width=400, height=300, toolbar=nom scrollbars=no,resizable=no-Detailed/TotalSales.hmtl"
+            "link": "P-detailsPopUp, width=400, height=300, toolbar=nom scrollbars=no,resizable=no-Detailed/TotalSales.hmtl"
      
 //"link": "https://en.wikipedia.org/wiki/Apple"
 
@@ -339,7 +347,7 @@ FusionCharts.ready(function() {
       }, {
         "id": "LA",
        "color": "#cf4040",
-          "link": "P-detailsWin,width=600,height=800,left=900px,top=200px,status=no,directories=no, location=no,menubar=no, resizable=no-LA.png",
+          "link": "P-detailsWin,width=600,height=800,left=900px,top=200px,status=no,directories=no, location=no,menubar=no, resizable=no-Statements/LA.png",
        
       }, {
         "id": "WI",
@@ -365,7 +373,7 @@ FusionCharts.ready(function() {
         "id": "AL",
        // "value": "75873000",
         "color": "#cf4040",
-            "link": "P-detailsWin,width=600,height=800,left=900px,top=200px,status=no,directories=no, location=no,menubar=no, resizable=no-AL.png"
+            "link": "P-detailsWin,width=600,height=800,left=900px,top=200px,status=no,directories=no, location=no,menubar=no, resizable=no-Statements/AL.png"
    
       }, {
         "id": "GA",
@@ -460,7 +468,19 @@ FusionCharts.ready(function() {
 </script>-->
  
 
- 
+ <script type="text/javascript">
+(function() {
+
+var img = document.getElementById('image').firstChild;
+img.onload = function() {
+    if(img.height > img.width) {
+        img.height = '100%';
+        img.width = 'auto';
+    }
+};
+
+}());
+</script>
 
   <script>
     // tell the embed parent frame the height of the content
